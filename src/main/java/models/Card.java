@@ -58,10 +58,6 @@ public class Card {
 
     public boolean follows(Card card) {
 
-        System.out.print(NumCardlist.indexOf(card.cardValue));
-
-        System.out.print(NumCardlist.indexOf(this.cardValue));
-        System.out.println(NumCardlist.indexOf(card.cardValue) - NumCardlist.indexOf(this.cardValue) == 1);
         if (NumCardlist.indexOf(card.cardValue) - NumCardlist.indexOf(this.cardValue) == 1 || card == null) {
             return true;
         }
